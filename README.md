@@ -6,7 +6,7 @@
 
 ### Curso destinado a estudiantes de Maestría o Doctorado en Física o Astrofísica.
 
-### Programa del Doble Doctorado en Astrofísica (DDAp), [ITeDA](http://www.iteda.cnea.gov.ar/) y [UNSAM](http://www.unsam.edu.ar/)
+### Programa del Doble Doctorado en Astrofísica (DDAp), [ITeDA](http://www.iteda.cnea.gov.ar/)-[UNSAM](http://www.unsam.edu.ar/) y [KIT](https://www.kit.edu/)
 
 #### (C) 2017 - Hernán Asorey ([@asoreyh](https://twitter.com/asoreyh/))
 
