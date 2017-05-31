@@ -1,7 +1,7 @@
 \documentclass[11pt]{article}
 \usepackage[spanish]{babel} 
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath}
+\usepackage{amsmath,amssymb}
 \usepackage{color}
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -100,7 +100,69 @@
 		iniciada por un protón con energía $E_p = 100$\,PeV. Repita sus
 		cálculos para un helio, un carbono, un oxigeno, un calcio y un hierro
 		de la misma energía.
-	\item Alguno sobre radio de moliere y LDF
+	\item A partir de la definición del radio de Molière, 
+		\[ X_m = \sqrt{\frac{4\pi}{\alpha_{\mathrm{EM}}}} \frac{m_e
+		c^2}{E_{c}^{\mathrm{EM}}} X_{\mathrm{EM}}\]
+		calcule el radio de Moliere, $r_m$ en metros en los siguientes casos:
+		a) La Tierra a nivel del Mar; b) La Tierra en Chacaltaya ($h=5350$\,m
+		s.n.m); c) La Tierra en altura de vuelo ($h=11500$\,m s.n.m.); d) Marte
+		en la superficie.
+	\item En una lluvia iniciada por un núcleo de masa $A$, el número de
+		electrones puede calcularse como 
+		\[N_e^A \simeq 7.35\ A^{-0.046} \left (
+		\frac{E_p}{10^{17}\mathrm{\,eV}} \right )^{1.046} \times 10^7.\]
+		Luego, el número de muones queda parametrizado como:
+		\[N_\mu^A \simeq 0.95 \times 10^5  \left ( \frac{N_e^A}{10^6} \right
+		)^{0.75}.\]
+		A partir de esto, Greisen propuso una parametrización para la LDF de
+		los muones, que aún se utiliza, con algunos cambios. El experimento
+		KASCADE utilizó esta parametrización para la densidad de muones a una
+		distancia $r$ al eje de la lluvia, medida sobre el frente de la misma:
+		\[
+			\rho_\mu(\varrho_\mu) = \left (\frac{k_G N_\mu}{r_G^2} \right )
+			\varrho_\mu^{-0.69} \left ( 1 + \varrho_\mu \right
+			)^{-2.39} \left ( 1 + \left (0.1 \varrho_\mu \right )^2 \right
+			)^{-1.0}
+		\]
+		donde $N_\mu$ es el número total de electrones, $k_G=0.28$ es una
+		constante de normalización y $\varrho_\mu\equiv r/r_G$ es la distancia
+		normalizada al radio de Molière para muones, también llamado radio de
+		Greisen, $r_G=320$\,m. Estas expresiones completan las vistas en
+		clase para los electrones, 
+		\[
+			\rho_e(\varrho, S) = \left ( \frac{\Gamma(4.5 - S)}{2 \Gamma(S)
+			\Gamma(4.5 - 2S)} \right ) \left( \varrho \right)^{S-2} \left(1 +
+			\varrho \right)^{S-4.5} \left ( \frac{N_e(S)}{\pi R_M^2} \right),
+		\]
+		donde $\Gamma$ es la extensión del factorial a números reales y
+		complejos,
+		\[
+			\Gamma(z) = \int_0^\infty e^{-t} t^{z-1} \mathrm{d} t \,\, \to \,\,
+			\Gamma(n) = (n-1)! \,\,\mathrm{si}\,\, n \in \mathbb{Z}^+,
+		\]
+		$\varrho \equiv r/R_m$ es la distancia $r$ al eje expresada en unidades
+		del radio de Molière, y $N_e(S)$ es el número total de electrones a la
+		edad $S$, dado por
+		\[
+			N_e (S) = 0.31 y^{-1/2}  \exp \left [t \left ( 1 - \frac32 \ln S
+			\right ) \right ],
+		\]
+		que continúa siendo válida para un hadrón si se corrige la edad de la
+		lluvia por $S_A=1.15\ S$.
+		
+		Utilice todas estas expresiones según corresponda para calcular el
+		número de electrones y muones y su distribución a nivel del suelo, y
+		compárelas con los resultados obtenidos en las simulaciones de un
+		fotón, un protón y un hierro verticales con energía $E_p=0.5$\,PeV
+		realizadas en clase para un observatorio situado en la ciudad de la
+		furia.
+		
+		Luego, si se anima, calcule la profundidad del máximo $X_{\max}$ y la
+		altura del máximo $h_{\max}$ para un fotón vertical de $2$\,PeV.
+		Entonces posicione un nivel de observación en CORSIKA a dicha altitud y
+		realice la simulación de un fotón, un protón y un hierro de procedencia
+		vertical con esa energía. Repita los cálculos y comparaciones para el
+		número y la distribución de electrones y muones en cada caso. 
 \end{enumerate}
 
 
