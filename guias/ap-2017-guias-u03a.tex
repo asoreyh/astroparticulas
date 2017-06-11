@@ -1,0 +1,136 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\renewcommand{\familydefault}{\sfdefault}
+
+\textwidth 17cm
+\textheight 25.8cm
+\voffset -3.0cm
+\hoffset -2.0cm
+
+\begin{document}
+\pagestyle{empty}
+{Junio 2017}
+\begin{center}
+	{\Large \bf Física de Astropartículas} \\
+{ \large \bf Detectores - A} \\ {\bf 1er semestre 2017}
+\end{center}
+
+\setcounter{enumi}{0}      %% Offset en numero de problema
+\begin{enumerate}
+	\item Imagine que se desea construir un detector Cherenkov, pero en lugar
+		de usar agua, se usará disulfuro de carbono (CS$_2$), que tiene un
+		índice de refracción mayor que el agua y que podemos suponer constante,
+		i.e., $n_{\mathrm{CS}_2}(\lambda) \equiv n = 1.627$, y con una densidad
+		algo mayor también, $\rho_{\mathrm{CS}_2}(\lambda) \equiv \rho =
+		1.3$\,g\,cm$^{-3}$. Para construir al detector se utilizará una esfera
+		de radio $r=1$\,m, y en algún punto de su superficie se montará un PMT
+		con la siguiente eficiencia cuántica:
+		$$
+			\mathrm{QE} \equiv \frac{\mathrm{fotoelectrones\
+			producidos}}{\mathrm{fotones\ incidentes}} = 
+			\begin{cases}
+				0    & \lambda < 250\mathrm{\ nm} \\
+				0.30 & 250\mathrm{\ nm} \leq \lambda \leq 600\mathrm{\ nm} \\
+				0    & \lambda > 600\mathrm{\ nm}.
+			\end{cases}
+		$$
+		Utilizando como guía las expresiones calculadas en clase, y la curva
+		del poder de frenado para electrones en CS$_2$ (ver tabla), calcule:
+		\begin{enumerate}
+			\item El ángulo máximo de emisión Cherenkov $\theta_{\mathrm{Ch}}$
+				en este líquido. 
+			\item El umbral de producción Cherenkov $\beta_{\mathrm{Ch}}$, y el
+				correspondiente momentum $p$, energía cinética $K$ y energía
+				total $E$ que deben tener electrones, muones y protones para
+				ser detectados.  Luego, calcule la energía mínima que debe
+				tener un fotón para ser detectado mediante el proceso de
+				creación de pares en el CS$_2$.
+			\item La curva de producción de fotones Cherenkov como función de
+				la energía de la partícula (vea como ejemplo la figura de la
+				diapositiva 26/66 de la clase U03-detectores-a), para
+				electrones, muones y protones.
+			\item El valor de $X_EM$ y la energía crítica $E_c$
+				electromagnética. Compare este valor con la energía más
+				probable de los electrones que ingresan al detector para las
+				lluvias simuladas en la unidad 2. Luego, calcule el factor de
+				atenuación de la esfera en la dirección radial para esos
+				electrones.
+			\item Estime si para este detector esférico, es necesario incluir
+				algún material difusor en la superficie interna del mismo con
+				el fin de uniformizar la distribución de fotones Cherenkov.
+			\item A partir del rango estimado para electrones (ver tabla),
+				calcule, cuando corresponda, el número total de fotones
+				Cherenkov producidos por la propagación de un electrón con
+				energía $E=\{0.5; 5; 50; 500\}$\,MeV (por simplicidad, suponga
+				que la curva de producción de fotones es una función escalón,
+				que vale 0 por debajo de la energía umbral de producción y el
+				valor de saturación por encima. Haga y describa las
+				aproximaciones que considere necesarias para estimar el total
+				de fotones.)
+		\end{enumerate}
+		\begin{center}
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				\multicolumn{5}{c}{ESTAR: Stopping Powers and Range Tables for
+				Electrons} \\
+				\multicolumn{5}{c}{Carbon disulfide
+				$\rho=1.2927$\,g\,cm$^{-3}$, Ionization=175.9\,eV} \\
+				\hline
+				$K$ (MeV) & $S_{\mathrm{Col}}$ (MeV cm$^2$/g) &
+				$S_{\mathrm{Rad}}$ (MeV cm$^2$/g) & $S_{\mathrm{Tot}}$ (MeV
+				cm$^2$/g) & Range (g/cm$^2$)\\
+				\hline
+				5.000E-01 & 1.653E+00 & 1.425E-02 & 1.668E+00 & 2.186E-01 \\ 
+				5.000E+00 & 1.635E+00 & 1.440E-01 & 1.779E+00 & 2.961E+00 \\ 
+				5.000E+01 & 1.900E+00 & 1.995E+00 & 3.895E+00 & 1.942E+01 \\ 
+				5.000E+02 & 2.093E+00 & 2.255E+01 & 2.465E+01 & 5.958E+01 \\
+				\hline
+			\end{tabular}
+		\end{center}
+	\item Para un WCD cilíndrico de radio $r$ y altura $h$ obtenga una función
+		$T(\theta_\mu)$ que de la distancia recorrida por un muón que ingrese
+		al detector con un ángulo $\theta_\mu$ respecto a la vertical de tal
+		manera que su trayectoria intercepta al eje de simetría del cilindro.
+		\begin{enumerate}
+			\item Definamos como $1$\,VEM a la señal producida en el WCD por el
+				pasaje de un muón central y vertical, y que dicha señal es
+				proporcional a la distancia recorrida por la partícula en el
+				interior del detector. Utilizando la función $T(\theta_\mu)$,
+				calcule la distribución de señal esperada como función de
+				$\theta_\mu$ para los siguientes factores geométricos del WCD:
+				$d/h=1$, $d/h=2$ y $d/h=3$. Este último caso corresponde al
+				detector del arreglo SD de Auger. Luego, calcule para este
+				detector ($h=1.2$\,m y $d=3.6$\,m) la distribución de señal
+				esperada.
+			\item A partir de la curva de señal esperada, calcule la LDF$_\mu$
+				de la señal esperada de muones para detectores tipo SD a partir
+				de los datos simulados de las cascadas de la unidad 2.
+			\item Para estimar la señal de la componente EM, puede utilizar la
+				siguiente relación válida para electrones:
+				$$\log_{10} E_d(p) = \sum_{i=0}^2 a_i \log_{10}
+				\left(\frac{p}{\mathrm{MeV/c}} \right)^i,$$
+				donde $a_2=-0.131, a_1=1.337$ y $a_0=-0.29$, $p$ es la cantidad
+				de movimiento del electrón y $E_d$ es la energía depositada en
+				el detector (y la calibración indica que $1$\,VEM=$200 h$\,MeV,
+				siendo $h$ la altura en m). Para los fotones puede verse que
+				en promedio depositan la misma energía que los electrones pero
+				con una probabilidad de conversión del $\sim 80$\% para $E_\gamma
+				\geq 2$\,MeV, y $\sim 0\%$ para energías menores. Grafique la
+				función anterior y luego compárela con la aproximación calorimétrica
+				($E_d \simeq E$), i.e., grafique la fracción $\xi(E) =
+				\frac{E-E_d}{E}$ como función de la energía del secundario $E$
+				en el rango entre $1$\,MeV$\lesssim E \lesssim 500$\,MeV
+			\item Utilice la expresión anterior para calcular la
+				LDF$_{\mathrm{EM}}$ a partir de la distribución de la
+				componente EM de las simulaciones realizadas.
+			\item Dado que en el orden de las aproximaciones realizadas la
+				componente hadrónica puede ser despreciada, calcule la LDF
+				total como la suma de las dos contribuciones anteriormente
+				mencionadas.
+		\end{enumerate}
+\end{enumerate}
+\end{document}
