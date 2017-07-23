@@ -1,0 +1,44 @@
+RUNNR         1
+EVTNR         0
+NSHOW         1
+
+PRMPAR        1
+ESLOPE        -2.7
+ERANGE        20000 200000
+THETAP        0 0
+PHIP          -180 180
+
+OBSLEV        3700.E2
+ATMOSPHERE    2 Y
+MAGNET        20.94 -8.91
+ARRANG        0
+CERARY        201 201 10.E2 10.E2 2.E2 2.E2
+
+FIXHEI        0. 0
+FIXCHI        0.
+SEED          8122181   0   0
+SEED          8584290   0   0
+SEED          3799768   0   0
+SEED          5566136   0   0
+ECUTS         0.05 0.05 0.0001 0.0001
+
+TSTART        T
+MUADDI        F
+MUMULT        T
+MAXPRT        0
+ELMFLG        F	  T
+STEPFC        1.0
+RADNKG        200.E2
+LONGI         F 20.  T  T
+ECTMAP        1.E3
+
+CERQEF        F T F
+CERSIZ        1.
+CERFIL        T
+CWAVLG        250.  700.
+
+DIRECT        ./
+DATBAS        T
+PAROUT        T F
+USER          astroparticulas
+EXIT

@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+\renewcommand{\familydefault}{\sfdefault}
+
+\textwidth 17cm
+\textheight 25.8cm
+\voffset -3.0cm
+\hoffset -2.0cm
+
+\begin{document}
+\pagestyle{empty}
+{Junio 2017}
+\begin{center}
+	{\Large \bf Física de Astropartículas} \\
+{ \large \bf Detectores - B} \\ {\bf 1er semestre 2017}
+\end{center}
+
+\setcounter{enumi}{0}      %% Offset en numero de problema
+\begin{enumerate}
+	\item {\bf{Telescopios Cherenkov}}\\
+		Con el fin de estudiar la producción Cherenkov durante el desarrollo de
+		una EAS, partiendo de la distribución LAGO-CORSIKA compile una versión
+		de CORSIKA, desactivando la versión curva (-7a) y activando la opción
+		CERENKOV (opción 1a y luego subopciones 1 y 1) y CEFFIC (opción 1c).
+		Utilice como ejemlo para los {\textit{inputs}} de CORSIKA el archivo
+		{\texttt{cherenkov.input}}, editándolo de acuerdo a lo solicitado. Entonces:
+		\begin{description}
+			\item [Previo a la simulación]: considere la lectura del manual de
+				CORSIKA para los datacards {\texttt{CERARY, CERQEF, CERSIZ,
+				CERFIL, CWAVLG}}. En particular, {\texttt{CERARY}} crea un arreglo
+				rectangular de detectores Cherenkov en el nivel de observación,
+				donde se contarán los fotones Cherenkov producidos durante la
+				EAS. Por ejemplo, {\texttt{CERARY 201 201 10.E2 10.E2 2.E2
+				2.E2}} creará una cuadrícula de 201x201 detectores, centrados
+				en $(0,0)$, con una superficie de (2x2)\,m$^2$, y separados por
+				$10$\,m en la dirección $X$ y $10$\,m en la dirección $Y$.
+			\item [Simulación:] simule la producción Cherenkov para un fotón,
+				un protón y un hierro, con dirección vertical y energías
+				$E_p/\mathrm{GeV} = 2\times10^1, 2\times10^2, 2\times10^3,
+				2\times10^4, 2\times 10^5$, para un arreglo como el mencionado
+				anteriormente situada en San Antonio de Los Cobres ($h=3700$\,m
+				s.n.m., $BX=20.94$\,$\mu$T y $BZ=-8.91$\,$\mu$T, y atmósfera
+				MODTRAN subtropical estándar en verano (E2). Es importante
+				recordar que deben cambiar las semillas de las simulaciones en
+				antes de cada corrida. Al finalizar la simulación, verá que
+				además del consabido archivo DATnnnnnn, tendrá también un
+				archivo CERnnnnnn conteniendo la distribución de fotones
+				detectados por el arreglo rectangular.
+			\item [Análisis:] al igual que el archivo {\texttt{DATnnnnnn}}, el
+				archivo {\texttt{CERnnnnnn}} es un archivo fortran binario sin
+				formato. El mismo puede ser leído y transformado en ASCII con,
+				por ejemplo, el código {\texttt{lagocrkread}}:\\
+				{\texttt{echo CERnnnnnn | ./lagocrkread > CERnnnnnn.dat}}\\
+				Luego, el archivo ASCII resultante puede ser analizado con el
+				código {\texttt{cherenkov}}, provisto junto con el paquete
+				ARTI. El mismo espera como parámetro la línea completa que
+				comienza con {\texttt{CERARY}} del archivo {\texttt{input}}:\\ 
+				{\texttt{./cherenkov -v -c CERARY 201 201 10.E2 10.E2 2.E2 2.E2 CERnnnnnn.dat}}\\
+				Con esto, produce un histograma bidimensional contenido en el archivo
+				{\texttt{CERnnnnnn.hst}} con el número de fotones y el número
+				de {\textit{hits}} que impactan sobre los detectores (recordar
+				que los fotones Cherenkov son simulados en CORSIKA en forma de
+				paquetes conteniendo un número variable de fotones. Los
+				{\textit{hits}} cuentan el número de paquetes que impactan).
+			\item [Resultados:] Analice los histogramas obtenidos en cada caso
+				y explique todas y cada una de las diferencias observadas en
+				función de lo visto en clase.  
+		\end{description} 
+\end{enumerate}
+\end{document}
