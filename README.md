@@ -28,7 +28,7 @@ Introducción al análisis de datos. Astronomía gamma y destellos de rayos gamm
 
 ### Máquina virtual LAGUBUNTU
 
-En el marco del proyecto [LAGO](http://lagoproject.org/) se ha creado una máquina virtual, basada en [lubuntu](http://lubuntu.net/), una implementación liviana de [ubuntu](https://www.ubuntu.com/), y con todos los códigos necesarios para ejecutar los ejercicios planteados, que está disponible para su descarga en los siguientes enlaces: [lagubuntu.ova en dropbox (disponible hasta 31/08/2017)](https://www.dropbox.com/s/9w4gp74g7zsugru/lagubuntu.ova?dl=0) ó [lagubuntu.ova en google drive](https://drive.google.com/file/d/0B0dvJZDeK85fM0JYbDhBeFlkems/view?usp=sharing).
+En el marco del proyecto [LAGO](http://lagoproject.org/) se ha creado una máquina virtual, basada en [lubuntu](http://lubuntu.net/), una implementación liviana de [ubuntu](https://www.ubuntu.com/), y con todos los códigos necesarios para ejecutar los ejercicios planteados, que está disponible para su descarga en [lagubuntu.ova en google drive](https://drive.google.com/file/d/0B0dvJZDeK85fM0JYbDhBeFlkems/view?usp=sharing).
 
 Esta máquina virtual emplea tecnologías de virtualización de [virtualbox](https://www.virtualbox.org/), versión 5.1 o superior, que es necesario [descargar e instalar](https://www.virtualbox.org/wiki/Downloads) para la ejecución de la máquina virtual. En caso de usarla, solicitar por correo el usuario y la contraseña.
 
