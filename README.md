@@ -1,14 +1,18 @@
-<img alt="" style="border-width:0" src="https://www.dropbox.com/s/b8ls807rceiuqr1/cr-banner.png?raw=1">
+![Banner](materiales/banner.png)
 
-## Física de Astropartículas
+# ## Física de Astropartículas - Primer semestre de 2018
 
-### Primer semestre de 2017
+**Asignatura destinada a estudiantes de Maestría o Doctorado en Física o Astrofísica del programa del Doble Doctorado en Astrofísica (DDAp), [ITeDA](http://www.iteda.cnea.gov.ar/)-[UNSAM](http://www.unsam.edu.ar/) y [KIT](https://www.kit.edu/)**
 
-### Curso destinado a estudiantes de Maestría o Doctorado en Física o Astrofísica.
+## Información importante
 
-### Programa del Doble Doctorado en Astrofísica (DDAp), [ITeDA](http://www.iteda.cnea.gov.ar/)-[UNSAM](http://www.unsam.edu.ar/) y [KIT](https://www.kit.edu/)
+Este commit correponde a la última edición del curso, correspondiente a la Cohorte 2017. Con este commit y release se da por cerrado el repositorio.
 
-#### (C) 2017 - Hernán Asorey ([@asoreyh](https://twitter.com/asoreyh/))
+![Banner](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/cc-zero.png)
+
+Todo este material ha sido liberado utilizando una licencia de dominio público creative commons [CC0-1.0-Universal](https://creativecommons.org/publicdomain/zero/1.0/). Por favor revise los [términos de la licencia](#licencia) antes de su uso.
+
+Las clases fueron realizados en [LibreOffice Impress](https://es.libreoffice.org/descubre/impress/), la herramienta de presentaciones de [LibreOffice](https://es.libreoffice.org/). Para poder visualizar correctamente las clases, por favor descarguelo siguiendo el este enlace: **[Descargue LibreOffice](https://es.libreoffice.org/descarga/libreoffice-estable/)**. En Windows, puede ser necesario descargar también la fuente [Cabin](https://www.fontsquirrel.com/fonts/download/cabin). Para facilitar la difusión, se incluyen también versiones de las clases en formato pdf. Para visualizarlo, podría necesitar descargar [Acrobat Reader](https://get.adobe.com/es/reader).
 
 ## Programa
 
@@ -32,4 +36,9 @@ En el marco del proyecto [LAGO](http://lagoproject.org/) se ha creado una máqui
 
 Esta máquina virtual emplea tecnologías de virtualización de [virtualbox](https://www.virtualbox.org/), versión 5.1 o superior, que es necesario [descargar e instalar](https://www.virtualbox.org/wiki/Downloads) para la ejecución de la máquina virtual. En caso de usarla, solicitar por correo el usuario y la contraseña.
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este trabajo se distribuye en forma gratuita bajo la <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a>.
+
+### Licencia
+
+(C) 2017, 2018 - Hernán Asorey
+
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/asoreyh/fisica-de-astroparticulas">Física de Astropartículas (DDAp, UNSAM/KIT)</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/asoreyh/">Hernán Asorey</a> is marked with <a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0 Universal<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1" alt=""></a>.</p>
