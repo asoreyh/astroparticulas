@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/90048657.svg)](https://doi.org/10.5281/zenodo.14590231)
+
 ![Banner](materiales/banner.png)
 
 # Física de Astropartículas - Primer semestre de 2018
