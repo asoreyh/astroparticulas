@@ -1,6 +1,6 @@
 ![Banner](materiales/banner.png)
 
-# ## Física de Astropartículas - Primer semestre de 2018
+# Física de Astropartículas - Primer semestre de 2018
 
 **Asignatura destinada a estudiantes de Maestría o Doctorado en Física o Astrofísica del programa del Doble Doctorado en Astrofísica (DDAp), [ITeDA](http://www.iteda.cnea.gov.ar/)-[UNSAM](http://www.unsam.edu.ar/) y [KIT](https://www.kit.edu/)**
 
